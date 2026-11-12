@@ -5,13 +5,13 @@
         <meta charset="UTF-8"> <!-- Permite acentos, cedilhas e caracteres especiais-->
         <meta name="viewport" content="width-device-widht,initial-scaled=1.0">
 
-
+        <link rel="stylesheet" href="../CSS/style.css">
     </head>
     
     <body> <!-- Corpo Do Site - Conteudo Visivel para Todos-->
         <header>
                 <div>
-                    <a href="index.html">Edu<span>Tech</span></a>
+                    <a href="index.html" class="logo">Edu<span>Tech</span></a>
                 </div>  
                 <nav>
                     <a href="../index.html">Inicio</a>
@@ -22,7 +22,25 @@
             
         </header>
         <!--Conteudo da pagina do site-->
-
+        <main>
+            <section id="containerFormContato">
+                <H1>Fale com a EduTech</H1>
+                <p>Tem dúvida sobre nossos cursos? Escreva sua mensagem</p>
+                <form>
+                    <label for="nome contato">Nome completo</label>
+                    <input id="nomeContato" type="text" required>
+                    <br>
+                    <label for="emailContato">E-mail</label>
+                    <input id="emailContato" type="email" required>
+                    <br>
+                    <label for="mensagemContato">Mensagem</label>
+                    <textarea id="mensagemContato" rows="5" minlenght="50"></textarea>
+                    <br>
+                    <button type="submit"Enviar Mensagem></button>
+                </form>
+            </section>
+            
+        </main>
         <!-- ------------------------- -->
         <footer> <!--Rodape do corpo do site-->
             <p>2026. Todos direitos reservados</p>
@@ -30,8 +48,6 @@
         </footer>
     
     </body>
-
-
 
 
 
