@@ -1,61 +1,85 @@
-/*CONFIGURACOES GERAIS*/
+/* CONFIGURAÇÕES GERAIS */
 
-body{
-    background-color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif; 
-    margin: 0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
     padding: 0;
-    color: black;
-    background-color: #ffffff;
-    
+    color:black;
+    background-color: white;
 }
 
-h1,h2,h3{
+h1,h2,h3 {
     color:#1a4db3;
     text-align: center;
 }
 
-p{
+p {
     line-height: 1.6;
-    margin: 10px 0;
+    margin:10px 0;
 }
 
-/*CABECALHO E MENU*/
-
-header{
-     background-color: #1a4db3; color: white; padding: 20px 0;
+header {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Logo de um canto e menu de outro */
+    align-items: center; /* Alinha os itens no meio na vertical */
+    background-color: #1a4db3;
+    color: white;
+    padding: 10px 20px;
 }
 
+.menu{
+    display: flex; /*Links ficam em linha */
+    gap:15px; /*Espaço entre os links */
+}
+
+footer{
+    color: white;
+    background-color: #1a4db3;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a{
+    color:#ff6a00;
+    text-decoration: none;
+}
+
+/* CHAMAR E CONFIGURAR CLASS CRIADAS NO HTML */
 .logo{
-    text-decoration: none; /* Tira o sublinhado do link*/
-    color: white; /* cor do texto*/
-    font-size: 24px; /* tamanho da letra*/
-    font-weight: bold;/* Deixa em negrito*/
+    text-decoration: none; /* tire o sublinado de link */
+    color: white; /* cor de texto: branco */
+    font-size: 24px;  /* tamanho de letra: 24 pixel */
+    font-weight: bold; /* texto em negrito */
 }
 
-.logo span{
-     color: #ff6a00;
+.logo span {
+    color: #ff6a00
 }
 
-nav{
-    text-align: center; 
+nav {
+    text-align: center;
     margin-top: 10px;
 }
 
-nav a{
-    color: white;
+nav a {
+    color:white;
     text-decoration: none;
-    margin: 0 15px;
+    margin:0 15px;
     font-weight: bold;
 }
 
 nav a:hover{
-    color: #ff6a00;
+    color:#ff6a00
 }
 
-/*SECAO PRINCIPAL*/
+.ativo {
+   color: darkorange; /* Cor de texto */
+   font-weight: bold;
+}
 
-.hero{
+/* SEÇÃO PRINCIPAL DA PÁGINA INÍCIO */
+.hero {
     background-color: #f5f5f5;
     text-align: center;
     padding: 60px 20px;
@@ -63,128 +87,76 @@ nav a:hover{
 
 .hero h1{
     font-size: 36px;
-    color: #1a4db3;
+    color:#1a4db3;
 }
 
-.hero p{
+.hero p {
     font-size: 18px;
-    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .btn-primario{
-    display: inline-block;
     background-color: #ff6a00;
-    color: white; padding: 10px 20px;
-    border-radius: 8px;
+    color:#f5f5f5;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .btn-secundario{
-    display: inline-block;
-    background-color: white;
-    color: #1a4db3;
+    background-color: #f5f5f5;
+    color:#1a4db3;
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
-    text-decoration: none;
-    border: 2px solid #1a4db3;
+    border: 2px solid  #1a4db3;
 }
 
 .btn-primario:hover, .btn-secundario:hover{
-    opacity: 0.8;
+    opacity: 0.8; /* TRANSPARENCIA DO BOTÃO */
 }
 
-.destaques{
+.destaques {
     padding: 30px 20px;
 }
 
-.card{
-     background-color: white;
-     padding: 20px;
-     margin: 12px 0;
-     border: 1px solid #dddddd;
-     border-radius: 8px;
-     text-align: center;
-}
-
-footer{
-    background-color: #1a4db3; 
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
-
-footer a{
-    color: #ff6a00;
-    text-decoration: none;
-}
-
-.sobre{
-     padding: 30px 20px; 
-     text-align: center;
-}
-
-.valores-lista{ 
-    list-style: none;
-    padding: 0;
-}
-
-.valores-lista li{
-     padding: 6px 0;
-     text-align: center;
-}
-
-.curso{
-    padding: 15px;
-    margin: 15px 0;
-    border: 1px solid #ddd;
+.card {
+    background-color: white;
+    margin:12px 0;
+    border:1px solid #dddddd;
     border-radius: 8px;
 }
 
-.curso img{
-    max-width: 100%;
-    height: auto;
-}
 
-input, textarea{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-input:focus, textarea:focus{
-     outline: 2px solid #1a4db3;
-     outline-offset: 2px;
-}
-
-button{
-    background-color: #ff6a00;
-    color: white; padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-     cursor: pointer;
-}
-
+/* PÁGINA CURSOS */
 .curso {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: 0.2s; /* Hover suave */
     padding: 15px;
-    margin: 15px;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    text-align-last: center;
-
+    margin:15px;
+    border:1px solid #dddddd;
+    border-radius: 8px; 
+    text-align: center;
+}
+.curso:hover {
+    transform:translateY(-3px); /*Sobe um pouco */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);/*Projeção de sombra */
 }
 
-.curso img{
-
-    max-width: 100%;
-    height: auto;
+.curso img {
+    width:100%; /* Ocupa toda a largura do card */
+    height: 140px; /* Altura padrão para todas imagens*/
+    object-fit: contain;/*Mostra a imagem INTEIRA */
+    background-color: #ffffff; /*Cor de fundo */
+    border-radius: 6px; /*Bordas arrendodas */
+    margin-top: 10px;/*Margem em cima da imagem */
 }
 
-input, textarea {
+/* PÁGINA CONTATO */
+input,textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border: 1px solid #cccccc;
@@ -193,16 +165,42 @@ input, textarea {
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus{
     outline:2px solid #1a4db3;
-
 }
 
-button {
-    background: #ff6a00;
-    color: #f5f5f5;
+button{
+    background-color: #ff6a00;
+    color:#f5f5f5;
     border-radius: 8px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    border:none;
+    padding: 10px 20px;
+    cursor:pointer;
+}
+
+#containerFormContato{
+    text-align: center;
+}
+
+.contatoForm{
+    max-width:500px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px
+}
+
+.cadastro,.login{
+    padding:40px 20px
+}
+
+.loginForm, .cadastroForm{
+    max-width:500px;
+    margin:0 auto;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 2px 8px black
 }
