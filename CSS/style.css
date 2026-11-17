@@ -318,6 +318,8 @@ select:focus-visible {
 @media (prefers-reduced-motion: no-preference) {
   a,
   button {
-    transition: color 150ms ease, background-color 150ms ease;
+    transition:
+      color 150ms ease,
+      background-color 150ms ease;
   }
 }
