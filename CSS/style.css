@@ -320,6 +320,7 @@ select:focus-visible {
   button {
     transition: color 150ms ease, background-color 150ms ease;
   }
+<<<<<<< HEAD
 
   /* Contato */
 }
@@ -354,3 +355,6 @@ input, textarea {
     max-width: 100%;
     box-sizing: border-box;
 }
+=======
+}
+>>>>>>> 8be6579b31f5913736a3fbb297079bc6795f6782
