@@ -27,6 +27,36 @@ header {
     padding: 10px 20px;
 }
 
+.logo a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.logo span {color: #ff6a00}
+
+nav.menu {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+nav.menu a{
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold;
+}
+
+nav.menu a:hover {
+    color: #ff6a00; 
+}
+
+nav.menu .ativo {
+    color: darkorange;
+    font-weight: bold;
+}
+
 .menu{
     display: flex; /*Links ficam em linha */
     gap:15px; /*Espaço entre os links */
@@ -140,6 +170,8 @@ nav a:hover{
     border:1px solid #dddddd;
     border-radius: 8px; 
     text-align: center;
+    text-decoration: none;
+    color:black;
 }
 .curso:hover {
     transform:translateY(-3px); /*Sobe um pouco */
@@ -190,17 +222,18 @@ button{
     gap:10px
 }
 
-.cadastro,.login{
-    padding:40px 20px
+.cadastro, .login{
+    padding: 40px 20px;
 }
 
-.loginForm, .cadastroForm{
-    max-width:500px;
+.loginForm,.cadastroForm {
+    max-width: 500px;
     margin:0 auto;
-    background-color:white;
-    display:flex;
-    flex-direction:column;
-    padding:30px;
-    border-radius:8px;
-    box-shadow:0 2px 8px black
+    background-color: #ffffff;
+    display: flex   ;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.253);
+    gap: 10px;
 }
